@@ -1,0 +1,105 @@
+How to create files  in linux
+----------------------------------- 
+
+touch one.txt
+
+Different ways to create files
+-------------------------------
+1) touch one.txt
+
+
+ 2) cat <<EOF>> file3
+   I'm from file3
+  EOF
+
+---------------------------------
+To view the contents of file
+
+cat  becomedevops.txt
+
+----------------------------------
+To copy the contents of files
+
+cp firstfile.txt firstfile_bkup.txt
+-----------------------------------
+
+To rename thefiles
+
+mv firstfile.txt file1.txt
+-------------------------------------
+To Delete the files
+
+rm firstfile.txt
+
+-------------------------------------
+
+
+
+
+
+
+Types of editors
+------------------
+
+vi 
+vim
+nano
+
+
+Using a Vi Editor
+-----------------------------
+vi firstfile.txt
+
+   
+To add any content in the file
+Enter  i ---> Insert Mode
+
+add any text
+
+To save
+
+
+ESC
+
+shift+: wq!
+-------------------------------------------
+
+To create Directory
+------------------
+mkdir aws
+
+  ---> To get in to a particular directory use cd command
+      
+       ex: cd aws
+       
+To create directories recursively
+---------------------------------
+
+mkdir -p aws/ec2/userdata
+
+
+
+To get back to the previous directory
+------------------------------------
+ cd ..
+
+To know the current directory
+-------------------------------------
+pwd 
+
+
+--------------------------------------
+
+To Delete directories
+
+rmdir aws
+-------------------------------------
+To see the list of heirarchies of files and  drectories visually
+Install tree utility
+
+apt install tree
+
+tree
+
+ex: tree aws
+aws is a directory
